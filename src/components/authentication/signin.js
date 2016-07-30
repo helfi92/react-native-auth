@@ -36,6 +36,7 @@ module.exports = React.createClass({
 	},
     onPress: function () {
         // Log user in
+        this.props.navigator.immediatelyResetRouteStack([{ name: 'tweets' }])
     },
 	onSignupPress: function () {
 		// navigate over to signup

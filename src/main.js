@@ -6,10 +6,12 @@ import {
 
 import Signin from './components/authentication/signin';
 import Signup from './components/authentication/signup';
+import Tweets from './components/tweets/tweets';
 
 var ROUTES = {
 	signin: Signin,
-    signup: Signup
+    signup: Signup,
+    tweets: Tweets
 };
 
 module.exports = React.createClass({
