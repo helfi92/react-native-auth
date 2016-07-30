@@ -17,7 +17,6 @@ module.exports = React.createClass({
         var Component = ROUTES[route.name];
         return <Component route={route} navigator={navigator} />;
     },
-
     render: function() {
 		return (
 			<Navigator
