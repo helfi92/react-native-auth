@@ -30,12 +30,18 @@ module.exports = React.createClass({
                     onChangeText={(password) => this.setState({ password })}
                     value={this.state.password} />
                 <Button text={'Sign In'} onPress={this.onPress} />
+				<Button text={'I need an account...'} onPress={this.onSignupPress} />
 			</View>
 		);
 	},
     onPress: function () {
         // Log user in
-    }
+    },
+	onSignupPress: function () {
+		// navigate over to signup
+		// ideal => navigator.push('signup');
+		this.props.navigator.push({ name: 'signup' });
+	}
 });
 
 var styles = StyleSheet.create({
